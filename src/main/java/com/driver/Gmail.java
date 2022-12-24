@@ -56,7 +56,7 @@ public class Gmail extends Email {
   if(Inbox.size()==0)
    return null;
 
-  Mail mail = Inbox.get(0);
+  Mail mail = Inbox.get(Inbox.size()-1);
   return mail.message;
 
  }
